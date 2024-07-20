@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    font-size: 20px;
+}
+/* BARRA DE NAVEGACIÓN */
+.nav {
+    background-color: #2E8B57;
+    height: 90px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-div img {
+    margin: 0;
+    padding: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-e {
+    position: relative;
+}
+
+.nav-list-e a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navegacion a:hover {
+    transform: scale(1);
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+.nav-list-e a:hover {
+    transform: scale(1);
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li a {
+    background-color: #FFD700;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    margin-right: 1rem;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 184px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav li .model2 {
+    display: none;
+    position: absolute;
+    min-width: 154px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+h1{
+    text-align: center;
+}
+
+#busqueda{
+    border-radius: 10px;
+}
+.formulario_bus .boton_bus {
+    color: #fff;
+    border-radius: 10px;
+}
+.formulario_bus {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.formulario_bus input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario_bus input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.form-submit button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[disabled] {
+    background-color: #eee;
+    cursor: not-allowed;
+}

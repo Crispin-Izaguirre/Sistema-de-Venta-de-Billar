@@ -1,0 +1,298 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 18px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav {
+    background-color: #2c3e50;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-div img {
+    margin: 0;
+    padding: 5px;
+    width: 180px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-e {
+    position: relative;
+}
+
+.nav-list-e a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navegacion a:hover, .nav-list-e a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li a {
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    margin-right: 1rem;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav li .model2 {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Estilo para la tabla principal */
+.tabla_principal {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la cabecera de la tabla */
+.tabla_principal thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.tabla_principal thead th {
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+/* Estilo para las filas de la tabla */
+.tabla_principal tbody tr {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.tabla_principal tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla_principal tbody tr:hover {
+    background-color: #d5dbdb;
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla_principal tbody td {
+    padding: 12px 15px;
+    color: #333;
+}
+
+/* Estilo para los enlaces de acciones */
+.tabla_principal tbody td a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.tabla_principal tbody td a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.transfor {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.tabla_principal tbody img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del formulario de búsqueda */
+#busqueda {
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 70%;
+    max-width: 400px;
+    border: 1px solid #dee2e6;
+}
+
+.formulario_bus {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.formulario_bus input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.formulario_bus input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+.form-container {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group select {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.form-submit button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[disabled] {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
