@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -2.5vh;
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+header .auth a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 0;
+}
+
+header .auth a:hover {
+    background-color: #d35400;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+main .results {
+    flex: 3;
+    margin-right: 20px;
+}
+
+main .results .padre {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+main .results .padre:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+main .results h1, h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #34495e;
+}
+
+main .results table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .results th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+main .results th {
+    background-color: #2980b9;
+    color: white;
+}
+
+main .results tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+main .results tr:hover {
+    background-color: #ecf0f1;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside .premium, .ranking {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+aside .premium:hover, .ranking:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+aside .premium b {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e67e22;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+table tbody tr td .button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+table tbody tr td .button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}

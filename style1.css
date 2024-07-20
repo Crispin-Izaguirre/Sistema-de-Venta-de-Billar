@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    font-size: 20px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav {
+    background-color: #2E8B57;
+    height: 90px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-div img {
+    margin: 0;
+    padding: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-e {
+    position: relative;
+}
+
+.nav-list-e a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navegacion a:hover {
+    transform: scale(1);
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+.nav-list-e a:hover {
+    transform: scale(1);
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li a {
+    background-color: #FFD700;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    margin-right: 1rem;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 184px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav li .model2 {
+    display: none;
+    position: absolute;
+    min-width: 154px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Estilo para la tabla principal */
+.tabla_principal {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la cabecera de la tabla */
+.tabla_principal thead {
+    background-color: #2E8B57;
+    color: white;
+}
+
+.tabla_principal thead th {
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+/* Estilo para las filas de la tabla */
+.tabla_principal tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+.tabla_principal tbody tr:nth-of-type(even) {
+    background-color: #f5f0eb;
+}
+
+.tabla_principal tbody tr:hover {
+    background-color: #f5e1e1;
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla_principal tbody td {
+    padding: 12px 15px;
+    color: #333;
+}
+
+/* Estilo para los enlaces de acciones */
+.tabla_principal tbody td a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #c2ff19;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.tabla_principal tbody td a:hover {
+    transform: scale(1.2);
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+.transfor {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.tabla_principal tbody img:hover {
+    transform: scale(1.2);
+}
+/*Estilos del formulario de busqueda*/
+#busqueda{
+    border-radius: 10px;
+}
+.formulario_bus .boton_bus {
+    color: #fff;
+    border-radius: 10px;
+}
+.formulario_bus {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.formulario_bus input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario_bus input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
